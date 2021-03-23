@@ -4,7 +4,7 @@
 #### This LAMPP stack contains:
 * PHP 7.14.16
 * Apache
-*MariaDB (MySQL)
+* MariaDB (MySQL)
 * Perl
 * phpMyAdmin
 ## Installation:
