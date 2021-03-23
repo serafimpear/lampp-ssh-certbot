@@ -21,7 +21,7 @@ $ docker build -t serafimpear/lampp-ssh .
 ```
 $ docker run -d -p 2222:22 -p 8080:80 --name lampp-ssh serafimpear/lampp-ssh
 ```
-4. Once all is ready, there schould be this at `http://localhost:8080/`:
+4. Once all is ready, there should be this at `http://localhost:8080/`:
 
 ![Result](https://github.com/serafimpear/lampp-ssh/blob/main/result.jpg?raw=true)
 
