@@ -144,3 +144,5 @@ Now, restart `lampp`:
 $ sudo /opt/lampp/lampp restart
 ```
 Congratulations! You just enabled HTTPS on your website!
+
+> By using any of the files available in this repository, you understand that you are AGREEING TO USE AT YOUR OWN RISK.
