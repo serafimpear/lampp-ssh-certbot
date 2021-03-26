@@ -18,7 +18,8 @@ RUN apt-get -y update && \
 		wget \
 		ufw \
 		supervisor \
-		sed
+		sed \
+		python3-certbot-apache
 
 # open port 22 for docker
 EXPOSE 22
@@ -49,6 +50,7 @@ COPY httpd-vhosts.conf /opt/lampp/etc/extra/httpd-vhosts.conf
 EXPOSE 80
 EXPOSE 443
 EXPOSE 3306
+RUN ufw allow 'Apache Full'
 
 # start webserver and ssh
 
