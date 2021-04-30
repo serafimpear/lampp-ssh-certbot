@@ -2,7 +2,7 @@
 > Works with Ubuntu 20.04 LTS
 
 #### This LAMPP stack contains:
-* PHP 7.14.16
+* PHP 7.4.16
 * Apache
 * MariaDB (MySQL)
 * Perl
@@ -18,9 +18,9 @@ ARG userpaswd=1234
 ```
 $ docker build -t serafimpear/lampp-ssh .
 ```
-3. And run it:
+3. And run it (`--restart` configures the container to always restart unless it is explicitly stopped or Docker is restarted.):
 ```
-$ docker run -d -p 2222:22 -p 8080:80 --name lampp-ssh serafimpear/lampp-ssh
+$ docker run -d --restart -p 2222:22 -p 8080:80 --name lampp-ssh serafimpear/lampp-ssh
 ```
 4. Once all is ready, there should be this at `http://localhost:8080/`:
 
