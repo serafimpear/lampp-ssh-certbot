@@ -54,4 +54,5 @@ RUN ufw allow 'Apache Full'
 
 # start webserver and ssh
 
-CMD ["/usr/bin/supervisord"]
+# CMD ["/usr/bin/supervisord"]
+CMD /opt/lampp/lampp stop && service ssh start
