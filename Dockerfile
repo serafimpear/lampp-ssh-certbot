@@ -44,6 +44,8 @@ RUN ./xampp-linux-x64-7.4.16-0-installer.run
 
 # config
 RUN sed -i 's/\#Include etc\/extra\/httpd-vhosts\.conf/Include etc\/extra\/httpd-vhosts\.conf/g' /opt/lampp/etc/httpd.conf
+RUN sed -i 's/User daemon/User $username/g' /opt/lampp/etc/httpd.conf
+RUN sed -i 's/Group daemon/Group $username/g' /opt/lampp/etc/httpd.conf
 COPY httpd-vhosts.conf /opt/lampp/etc/extra/httpd-vhosts.conf
 
 # open ports 80 and 443 for http and https, 3306 for mysql
